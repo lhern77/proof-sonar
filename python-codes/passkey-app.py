@@ -65,7 +65,7 @@ def main():
         for idx, contrasena_cifrada in enumerate(contrasenas):
             print(f"{idx+1}. Contraseña {idx+1}")
 
-        num = int(input("Introduce el número de la contraseña que quieres recuperar: ")) - 1
+        num = int(input("Introduce el número de la contraseña que quieres recuperar por favor: ")) - 1
         contrasena_cifrada = contrasenas[num].strip()
         contrasena = descifrar_contrasena(contrasena_cifrada, clave)
         print(f"La contraseña descifrada es: {contrasena}")
